@@ -7,3 +7,9 @@ body {
   background-color: rgb(236, 179, 94);
   text-align: center;
 }
+
+img.rest {
+ width: 500px;
+ height: auto;
+ border-radius: 40px;
+}

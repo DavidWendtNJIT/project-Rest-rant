@@ -11,7 +11,7 @@ function Def(html) {
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
           crossOrigin="anonymous"
         />
-        <link rel="stylesheet" href="/css/style.css"/>
+        <link rel="stylesheet" href="/css/style.css" />
       </head>
       <body>{html.children}</body>
     </html>

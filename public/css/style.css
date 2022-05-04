@@ -1,6 +1,6 @@
 h1 {
   text-align: center;
-  color: cornflowerblue;
+  color: rgb(62, 58, 113);
 }
 
 body {
@@ -12,4 +12,12 @@ img.rest {
  width: 500px;
  height: auto;
  border-radius: 40px;
+}
+
+img.rest-main {
+  width: 40%;
+}
+
+a {
+  text-decoration: none;
 }

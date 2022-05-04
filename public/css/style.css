@@ -1,11 +1,17 @@
 h1 {
   text-align: center;
-  color: rgb(62, 58, 113);
+  color: rgb(53, 142, 190);
 }
 
 body {
-  background-color: rgb(236, 179, 94);
-  /* text-align: center; */
+  background-color: rgb(48, 131, 169);
+  text-align: center;
+}
+
+main {
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: white;
 }
 
 img.rest {
@@ -19,5 +25,30 @@ img.rest-main {
 }
 
 a {
+  text-decoration: none;
+}
+
+nav {
+  background-color: rgb(128, 197, 234);
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 25px;
+}
+
+nav a {
+  color: black;
+  font-size: 1.5em;
+}
+
+nav a:hover {
+  color: rgb(48, 131, 169);
   text-decoration: none;
 }

@@ -8,7 +8,7 @@ function error404() {
         <div>
           <img src="/images/404.jpg" alt="404 Error" />
           <div>
-            Photo by <a href="https://www.pixar.com/sadDFaswdQ">PIXAR</a>
+            Image from <a href="https://www.vectorstock.com/22271798">VectorStock</a>
           </div>
         </div>
       </main>

@@ -11,11 +11,14 @@ function Def(html) {
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
           crossOrigin="anonymous"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500&family=Oleo+Script&family=Special+Elite&display=swap" rel="stylesheet"/>
         <link rel="stylesheet" href="/css/style.css" />
       </head>
       <body>
         <nav>
-          <ul>
+          <ul id= "navbar">
             <li>
               <a href="/">Home</a>
             </li>

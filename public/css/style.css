@@ -1,6 +1,8 @@
 h1 {
   text-align: center;
   color: rgb(53, 142, 190);
+  font-family: 'Oleo Script',
+  cursive;
 }
 
 body {
@@ -14,14 +16,10 @@ main {
   background-color: white;
 }
 
-img.rest {
- width: 500px;
+img {
+ width: 50%;
  height: auto;
  border-radius: 40px;
-}
-
-img.rest-main {
-  width: 40%;
 }
 
 a {
@@ -51,4 +49,9 @@ nav a {
 nav a:hover {
   color: rgb(48, 131, 169);
   text-decoration: none;
+}
+
+#navbar {
+  font-family: 'Oleo Script',
+  cursive;
 }

@@ -17,9 +17,10 @@ main {
 }
 
 img {
- width: 50%;
+ width: 500px;
  height: auto;
- border-radius: 40px;
+ border-radius: 20px;
+ 
 }
 
 a {

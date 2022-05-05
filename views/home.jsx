@@ -8,18 +8,17 @@ function home() {
         <h1>REST-Rant</h1>
         <div>
           <img
-            class="rest-main"
+            className="rest-main"
             src="images/rest_main.jpg"
             alt="Main Restaurant Picture"
           />
           <div>
-            Photo by <a href="AUTHOR_LINK">Brenda Godinez</a> on{" "}
-            <a href="UNSPLASH_LINK">Unsplash</a>
+            <p className="fs-5">
+              Photo by <a href="AUTHOR_LINK">Brenda Godinez</a> on{" "}
+              <a href="UNSPLASH_LINK">Unsplash</a>
+            </p>
           </div>
         </div>
-        <a href="/places">
-          <button className="btn-secondary">Places Page</button>
-        </a>
       </main>
     </Def>
   );

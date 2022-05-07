@@ -1,13 +1,17 @@
 const router = require("express").Router();
 const places = require("../models/places.js");
 
+
 //GET
+
 router.get("/", (req, res) => {
   res.render("../views/places/index", { places });
 });
+
 router.get("/new", (req, res) => {
   res.render("../views/places/new");
 });
+
 router.get("/:id", (req, res) => {
   let id = Number(req.params.id);
   if (isNaN(id)) {
@@ -19,12 +23,21 @@ router.get("/:id", (req, res) => {
   }
 });
 
-
 router.get("/:id/edit", (req, res) => {
-  res.render("../views/places/editForm");
+  let id = Number(req.params.id);
+  if (isNaN(id)) {
+    res.render("error404");
+  } else if (!places[id]) {
+    res.render("error404");
+  } else {
+    res.render("places/edit", { place: places[id], id });
+  }
 });
 
+
+
 //DELETE
+
 router.delete("/:id", (req, res) => {
   let id = Number(req.params.id);
   if (isNaN(id)) {
@@ -40,6 +53,7 @@ router.delete("/:id", (req, res) => {
 router.delete("/:id/rant/:rantId", (req, res) => {
   res.send(`..views/places/${req.params.id}/rant/${req.params.rantId}`);
 });
+
 
 // POST 
 
@@ -63,7 +77,9 @@ router.post("/:id/rant", (req, res) => {
   res.send(`..views/places/${req.params.id}/rant`);
 });
 
+
 //PUT
+
 router.put("/:id", (req, res) => {
   res.send(`..views/places/${req.params.id}`);
 });

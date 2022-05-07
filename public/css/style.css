@@ -1,12 +1,12 @@
 h1 {
   text-align: center;
-  color: rgb(53, 142, 190);
+  color: #074C66;
   font-family: 'Oleo Script',
   cursive;
 }
 
 body {
-  background-color: rgb(48, 131, 169);
+  background-color: #074C66;
   text-align: center;
 }
 
@@ -28,7 +28,7 @@ a {
 }
 
 nav {
-  background-color: rgb(128, 197, 234);
+  background-color: #56C2EA;
   padding: 10px;
 }
 
@@ -48,11 +48,28 @@ nav a {
 }
 
 nav a:hover {
-  color: rgb(48, 131, 169);
+  color: #d58025;
   text-decoration: none;
 }
 
 #navbar {
   font-family: 'Oleo Script',
   cursive;
+}
+
+.photoCred {
+  font-size: 0.7em;
+}
+
+label {
+  font-weight: bold;
+}
+
+.btn:hover {
+  color: #ef8a1f
+}
+
+.btn {
+  border-color: #56C2EA;
+  border-width: 2px;
 }

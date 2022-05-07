@@ -4,7 +4,7 @@ const Def = require("./default");
 function home() {
   return (
     <Def>
-      <main>
+      <main className="my-2">
         <h1>REST-Rant</h1>
         <div>
           <img
@@ -13,7 +13,7 @@ function home() {
             alt="Main Restaurant Picture"
           />
           <div>
-            <p className="fs-5">
+            <p className="photoCred">
               Photo by <a href="AUTHOR_LINK">Brenda Godinez</a> on{" "}
               <a href="UNSPLASH_LINK">Unsplash</a>
             </p>

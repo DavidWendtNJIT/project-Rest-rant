@@ -22,7 +22,7 @@ function show(data) {
           </div>
           <div className="row">
             <div className="col">
-              <div className="bg-info my-3 py-3 card text-center">
+              <div className="my-3 py-3 card text-center">
                 <div className="card-body">
                   <h2>Comments</h2>
                   <p>No comments yet...</p>
@@ -31,13 +31,13 @@ function show(data) {
             </div>
           </div>
           <div className="my-2">
-          <a href={`/places/${data.id}/edit`} className="btn btn-warning">
+          <a href={`/places/${data.id}/edit`} className="btn btn-secondary">
             Edit
           </a>
           </div>
           <div className="my-2">
           <form method="POST" action={`/places/${data.id}?_method=DELETE`}>
-            <button type="submit" className="btn btn-danger">
+            <button type="submit" className="btn btn-secondary my-2">
               Delete
             </button>
           </form>

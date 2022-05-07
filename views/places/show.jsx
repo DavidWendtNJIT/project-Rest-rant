@@ -8,7 +8,7 @@ function show(data) {
         <div className="container">
           <div className="row">
             <div className="col-md-7 my-2">
-              <img src={data.place.pic} class="img-fluid" />
+              <img src={data.place.pic} class="img-responsive img-resize" />
             </div>
             <div className="col-md-5 my-2">
               <h1>{data.place.name}</h1>
@@ -16,7 +16,8 @@ function show(data) {
               <p>No rating yet...</p>
               <h2>Description</h2>
               <p className="mt4">
-                Located in {data.place.city}, {data.place.state} serving {data.place.cuisines}
+                Located in {data.place.city}, {data.place.state} serving{" "}
+                {data.place.cuisines}
               </p>
             </div>
           </div>
@@ -31,16 +32,16 @@ function show(data) {
             </div>
           </div>
           <div className="my-2">
-          <a href={`/places/${data.id}/edit`} className="btn btn-secondary">
-            Edit
-          </a>
+            <a href={`/places/${data.id}/edit`} className="btn btn-secondary">
+              Edit
+            </a>
           </div>
           <div className="my-2">
-          <form method="POST" action={`/places/${data.id}?_method=DELETE`}>
-            <button type="submit" className="btn btn-secondary my-2">
-              Delete
-            </button>
-          </form>
+            <form method="POST" action={`/places/${data.id}?_method=DELETE`}>
+              <button type="submit" className="btn btn-secondary my-2">
+                Delete
+              </button>
+            </form>
           </div>
         </div>
       </main>

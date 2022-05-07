@@ -18,8 +18,9 @@ main {
 
 img {
  width: 500px;
- height: auto;
+
  border-radius: 20px;
+ text-align: center;
  
 }
 
@@ -47,14 +48,20 @@ nav a {
   font-size: 1.5em;
 }
 
-nav a:hover {
+h2 a {
+  color: black;
+  font-family: 'Varela Round',
+  sans-serif;
+}
+
+a:hover {
   color: #d58025;
   text-decoration: none;
 }
 
 #navbar {
-  font-family: 'Oleo Script',
-  cursive;
+  font-family: 'Varela Round',
+  sans-serif;
 }
 
 .photoCred {
@@ -72,4 +79,20 @@ label {
 .btn {
   border-color: #56C2EA;
   border-width: 2px;
+}
+
+.img-resize {
+  height: 300px;
+}
+
+#github {
+  width: 5%;
+  height: auto;
+  vertical-align: middle;
+}
+
+#footer-text {
+  color: white;
+  font-family: 'Permanent Marker',
+  cursive;
 }

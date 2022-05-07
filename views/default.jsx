@@ -4,7 +4,7 @@ function Def(html) {
   return (
     <html>
       <head>
-        <title>Title</title>
+        <title>REST-Rant</title>
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -15,6 +15,14 @@ function Def(html) {
           href="https://fonts.googleapis.com/css2?family=Karla:wght@500&family=Oleo+Script&family=Special+Elite&display=swap"
           rel="stylesheet"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+          rel="stylesheet"
+        ></link>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Varela+Round&display=swap"
+          rel="stylesheet"
+        ></link>
         <link rel="stylesheet" href="/css/style.css" />
       </head>
       <body>
@@ -34,6 +42,14 @@ function Def(html) {
 
         {html.children}
       </body>
+      <div id="footer">
+        <p id="footer-text">
+          Created by: David Wendt{" "}
+          <a href="https://github.com/DavidWendtNJIT">
+            <img id="github" alt="Github" src="/images/GitHub.png" />
+          </a>
+        </p>
+      </div>
     </html>
   );
 }

@@ -8,7 +8,7 @@ function home() {
         <h1>REST-Rant</h1>
         <div>
           <img
-            className="rest-main"
+            className="rest-main img-fluid img-center"
             src="images/rest_main.jpg"
             alt="Main Restaurant Picture"
           />

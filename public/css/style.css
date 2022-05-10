@@ -118,3 +118,7 @@ nav a:hover::before {
 .rest-name {
   font-size: 3.2em;
 }
+
+#newPlace {
+  text-align: center;
+}

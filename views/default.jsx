@@ -45,7 +45,11 @@ function Def(html) {
       <div id="footer">
         <p id="footer-text">
           Created by: David Wendt{" "}
-          <a href="https://github.com/DavidWendtNJIT">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/DavidWendtNJIT"
+          >
             <img id="github" alt="Github" src="/images/GitHub.png" />
           </a>
         </p>

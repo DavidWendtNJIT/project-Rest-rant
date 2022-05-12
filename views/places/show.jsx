@@ -12,10 +12,12 @@ function show(data) {
             </div>
             <div className="col-md-5 my-2">
               <h1 className="rest-name">{data.place.name}</h1>
-              <h3 className="mt-2">Rating</h3>
+              <h3>Founded</h3>
+              <p>{data.place.founded}</p>
+              <h3>Rating</h3>
               <p>No rating yet...</p>
               <h3>Description</h3>
-              <p className="mt4">
+              <p>
                 Located in {data.place.city}, {data.place.state} serving{" "}
                 {data.place.cuisines}
               </p>

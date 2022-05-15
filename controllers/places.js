@@ -90,9 +90,6 @@ router.post("/:id/comment", (req, res) => {
     });
 });
 
-router.post("/:id/rant", (req, res) => {
-  res.send("GET /places/:id/rant stub");
-});
 
 router.delete("/:id/rant/:rantId", (req, res) => {
   res.send("GET /places/:id/rant/:rantId stub");

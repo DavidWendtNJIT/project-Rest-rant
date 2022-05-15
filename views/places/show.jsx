@@ -1,6 +1,7 @@
 const React = require("react");
 const Def = require("../default");
 
+
 function show(data) {
   let comments = <p className="inactive">No comments yet!</p>;
   if (data.place.comments.length) {
@@ -78,7 +79,7 @@ function show(data) {
                   <label for="author">Author</label>
                   <input id="author" name="author" className="form-control" />
                 </div>
-                <div className="form-group col-sm-4">
+                <div id="slidecontainer" className="form-group col-sm-4">
                     <label htmlFor="stars">Star Rating</label>
                     <input
                       type="range"
@@ -90,7 +91,7 @@ function show(data) {
                       className="form-control"
                     />                
                 </div>
-                <div className="form-group col-sm-4 my-2">
+                <div className="form-group col-sm-4 my-4">
                   <div className="row">
                     <input
                       type="radio"

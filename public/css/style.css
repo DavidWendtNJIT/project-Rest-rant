@@ -118,3 +118,11 @@ nav a:hover::before {
 .rest-name {
   font-size: 3.2em;
 }
+
+ /* .card {
+   max-width: 18rem;
+ } */
+
+ #rating {
+   color: rgb(177, 32, 32)
+ }

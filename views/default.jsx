@@ -23,6 +23,10 @@ function Def(html) {
           href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Varela+Round&display=swap"
           rel="stylesheet"
         ></link>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        ></link>
         <link rel="stylesheet" href="/css/style.css" />
       </head>
       <body>

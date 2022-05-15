@@ -27,7 +27,6 @@ function new_form(data) {
                 value={new Date().getFullYear()}
               />
             </div>
-
             <div className="form-group col-sm-4">
               <label htmlFor="pic">Place Picture</label>
               <input className="form-control" id="pic" name="pic" />

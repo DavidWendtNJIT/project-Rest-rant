@@ -3,8 +3,21 @@ const Def = require("../default");
 
 
 function show(data) {
-  let comments = <p className="inactive">No comments yet!</p>;
+  let comments = (<p className="inactive">No comments yet!</p>);
+  let rating = (
+    <p className="inactive">Not yet Rated</p>
+  )
   if (data.place.comments.length) {
+    if (data.place.comments.length) {
+  let sumRatings = data.place.comments.reduce((tot, c) => {
+    return tot + c.stars
+  }, 0)
+  let averageRating = sumRatings / data.place.comments.length
+  rating = (
+    <p>
+      {Math.round(averageRating)} stars
+    </p>
+  )}
     comments = data.place.comments.map((c) => {
       return (
         <div className="border bg-white">
@@ -28,13 +41,13 @@ function show(data) {
             </div>
             <div className="col-md-5">
               <h1 className="rest-name">{data.place.name}</h1>
-              <h3>Founded</h3>
-              <p className="my-0">{data.place.founded}</p>
+              <h3 className="my-0">Founded</h3>
+              <p>{data.place.founded}</p>
               <hr className="my-0"></hr>
-              <h3>Rating</h3>
-              <p className="my-0">No rating yet...</p>
+              <h3 className="my-0">Rating</h3>
+              <p className="my-0">{rating}</p>
               <hr className="my-0"></hr>
-              <h3>Description</h3>
+              <h3 className="my-0">About</h3>
               <p>
                 Located in {data.place.city}, {data.place.state} serving{" "}
                 {data.place.cuisines}
@@ -99,7 +112,7 @@ function show(data) {
                       name="rant"
                       value="thumbsDown"
                     />
-                    <label for="rant">Thumbs Down!</label>
+                    <label for="rant">Thumbs Down?</label>
                   </div>
                 </div>
               </div>

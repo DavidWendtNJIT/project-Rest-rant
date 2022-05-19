@@ -28,7 +28,7 @@ function new_form(data) {
               />
             </div>
             <div className="form-group col-sm-4">
-              <label htmlFor="pic">Place Picture</label>
+              <label htmlFor="pic">Place Picture URL</label>
               <input className="form-control" id="pic" name="pic" />
             </div>
             <div className="form-group col-sm-4">

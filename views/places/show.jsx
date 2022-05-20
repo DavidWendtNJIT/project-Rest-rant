@@ -1,23 +1,19 @@
 const React = require("react");
 const Def = require("../default");
 
-
 function show(data) {
-  let comments = (<p className="inactive">No comments yet!</p>);
-  let rating = (
-    <p className="inactive">Not yet Rated</p>
-  )
+  let comments = <p className="inactive">No comments yet!</p>;
+  let rating = <p className="inactive">Not yet Rated</p>;
   if (data.place.comments.length) {
-    if (data.place.comments.length) {
-  let sumRatings = data.place.comments.reduce((tot, c) => {
-    return tot + c.stars
-  }, 0)
-  let averageRating = sumRatings / data.place.comments.length
-  rating = (
-    <p>
-      {Math.round(averageRating)} stars
-    </p>
-  )}
+    let sumRatings = data.place.comments.reduce((tot, c) => {
+      return tot + c.stars;
+    }, 0);
+    let averageRating = Math.round(sumRatings / data.place.comments.length);
+    let stars = "";
+    for (let i = 0; i < averageRating; i++) {
+      stars += "⭐";
+    }
+    rating = <p>{stars}</p>;
     comments = data.place.comments.map((c) => {
       return (
         <div className="border bg-white">
@@ -27,6 +23,16 @@ function show(data) {
           <h6>
             <stong>- {c.author}</stong>
           </h6>
+          <form
+            method="POST"
+            action={`/places/${data.place.id}/comment/${c.id}?_method=DELETE`}
+          >
+            <input
+              type="submit"
+              className="btn btn-secondary"
+              value="Delete Comment"
+            />
+          </form>
         </div>
       );
     });
@@ -53,10 +59,10 @@ function show(data) {
                 {data.place.cuisines}
               </p>
 
-              <a href={`/places/${data.id}/edit`} className="btn btn-secondary">
+              <a href={`/places/${data.place.id}/edit`} className="btn btn-secondary">
                 Edit
               </a>
-              <form method="POST" action={`/places/${data.id}?_method=DELETE`}>
+              <form method="POST" action={`/places/${data.place.id}?_method=DELETE`}>
                 <button type="submit" className="btn btn-secondary my-2">
                   Delete
                 </button>
@@ -93,16 +99,16 @@ function show(data) {
                   <input id="author" name="author" className="form-control" />
                 </div>
                 <div id="slidecontainer" className="form-group col-sm-4">
-                    <label htmlFor="stars">Star Rating</label>
-                    <input
-                      type="range"
-                      step="0.5"
-                      min="1"
-                      max="5"
-                      id="stars"
-                      name="stars"
-                      className="form-control"
-                    />                
+                  <label htmlFor="stars">Star Rating</label>
+                  <input
+                    type="range"
+                    step="0.5"
+                    min="1"
+                    max="5"
+                    id="stars"
+                    name="stars"
+                    className="form-control"
+                  />
                 </div>
                 <div className="form-group col-sm-4 my-4">
                   <div className="row">

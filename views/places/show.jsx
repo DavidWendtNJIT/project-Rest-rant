@@ -42,10 +42,10 @@ function show(data) {
       <main className="my-2">
         <div className="container">
           <div className="row">
-            <div className="col-md-7 my-2">
+            <div className="col-lg-7 my-2">
               <img src={data.place.pic} class="img-responsive img-resize" />
             </div>
-            <div className="col-md-5">
+            <div className="col-lg-5">
               <h1 className="rest-name">{data.place.name}</h1>
               <h3 className="my-0">Founded</h3>
               <p>{data.place.founded}</p>
